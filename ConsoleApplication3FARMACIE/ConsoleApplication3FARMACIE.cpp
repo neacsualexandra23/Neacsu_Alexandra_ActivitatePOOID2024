@@ -500,8 +500,8 @@ public:
 
 
 
-
-class GrupaMedicamente {   //clasa HAS A relatie 1 la mai multe 
+//clasa HAS A relatie 1 la mai multe 
+class GrupaMedicamente {   
 private:
     static int nrGrupaMedicamente;
     int id;
