@@ -1,2 +1,5 @@
 ﻿  ConsoleApplication3FARMACIE.cpp
-  ConsoleApplication3FARMACIE.vcxproj -> C:\Users\User\source\repos\ConsoleApplication3FARMACIE\x64\Debug\ConsoleApplication3FARMACIE.exe
+C:\git_repos\ConsoleApplication3FARMACIE\ConsoleApplication3FARMACIE.cpp(439,23): warning C4566: character represented by universal-character-name '\u021B' cannot be represented in the current code page (1252)
+C:\git_repos\ConsoleApplication3FARMACIE\ConsoleApplication3FARMACIE.cpp(442,21): warning C4566: character represented by universal-character-name '\u021B' cannot be represented in the current code page (1252)
+C:\git_repos\ConsoleApplication3FARMACIE\ConsoleApplication3FARMACIE.cpp(445,21): warning C4566: character represented by universal-character-name '\u021B' cannot be represented in the current code page (1252)
+  ConsoleApplication3FARMACIE.vcxproj -> C:\git_repos\ConsoleApplication3FARMACIE\x64\Debug\ConsoleApplication3FARMACIE.exe

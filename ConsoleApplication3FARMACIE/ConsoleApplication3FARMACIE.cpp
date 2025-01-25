@@ -25,7 +25,7 @@ public:
         this->adresa = "Str_Mugurel";
         this->nrMedicamente = 3;
         this->preturiMedicamente = nullptr; //new float[3] { 10.0, 15.0, 20.0 };
-        cout << "S-a apelat constructorul" << endl;
+       // cout << "S-a apelat constructorul" << endl;
     }
     Farmacie(string adresa, int nrMedicamente) :CODUnic(++nrFarmacie) {
         this->adresa = adresa;
@@ -63,7 +63,7 @@ public:
         cout << "S-a apelat constructorul copiere" << endl;
     }
     ~Farmacie() {
-        cout << "S-a apelat destructorul" << endl;
+       // cout << "S-a apelat destructorul" << endl;
         delete[] preturiMedicamente;
     }
     friend ostream& operator<<(ostream& out, const Farmacie& a) {
@@ -79,7 +79,7 @@ public:
     Farmacie& operator=(const Farmacie& a) {
         if (this != &a) {
 
-
+            // cout << "S-a apelat doperatorul =" << endl;
             this->adresa = a.adresa;
             this->nrMedicamente = a.nrMedicamente;
             delete[] this->preturiMedicamente;
@@ -315,7 +315,7 @@ public:
          cout << a.nume + " " + a.prenume << endl;
      };
 
-   /* static void citeste_din_fisier(string numeFisier) {
+   static void citeste_din_fisier(string numeFisier) {
         Farmacie FarmacieDinFisier;
         ifstream fis(numeFisier, ios::in);
         fis >> FarmacieDinFisier;
@@ -328,7 +328,7 @@ public:
         fis << c;
         fis.close();
     };
-    */
+    
 
 };
 
@@ -376,6 +376,7 @@ public:
     virtual ~Medicament() {
         delete[] SubstanteActive;
     }
+    //operator =
     Medicament& operator=(const Medicament& other) {
         if (this != &other) {
             denumire = other.denumire;
@@ -435,7 +436,7 @@ public:
         return out;
     }
 
-    /*friend istream& operator>>(istream& in, Medicament& m) {
+    friend istream& operator>>(istream& in, Medicament& m) {
               cout << "Introduceți denumirea medicamentului: ";
             in >> m.denumire;
 
@@ -447,7 +448,7 @@ public:
 
             return in;
         }
-      */
+      
     virtual void afisare() {
         cout << id << "; " << denumire << "; " << cantitate << "; " << pret << endl;
     }
